@@ -21,3 +21,12 @@ serial USB port. You can do that by running container using the following comman
 docker build . -t niimprint
 docker run -v /dev/tty.usbmodem1:/dev/tty.usbmodem1 -it --rm --name niimprint-server -p 80:8080 niimprint
 ```
+
+# Contributions
+
+Any contributions are welcome.
+
+There is a list of features I'd glad to see or make some day:
+
+* Implement automatically detecting if printer is connected and queue to print jobs as soon as printer is detected;
+* Implement an interface to map RFID sticker roll IDs to sticker sizes, so you don't need to change resolution in .env manually for a different sticker size;
